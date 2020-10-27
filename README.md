@@ -11,6 +11,7 @@ composer require kajitori-git/laravel-log-docker
 - Update .env file.
 
 ```
+# Change log channel
 LOG_CHANNEL=docker
 
 
