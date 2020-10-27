@@ -1,0 +1,34 @@
+{
+    "name": "kajitori-git/laravel-log-docker",
+    "description": "Output log to docker logs",
+    "type": "library",
+    "keywords": ["Laravel", "Docker", "Log"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kajitori Co.,Ltd.",
+            "homepage": "https://kajitori.co.jp/"
+        },
+        {
+            "name": "Hiroshi Sato",
+            "homepage": "https://hirossyi.net/"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.3"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelLogDocker\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelLogDocker\\ServiceProvider"
+            ]
+        }
+    }
+}
