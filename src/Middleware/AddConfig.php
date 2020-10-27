@@ -16,11 +16,11 @@ class AddConfig
 
         Config::set('logging.channels.docker', [
             'driver' => 'monolog',
-            'level' => env('LOG_LEVEL', 'error'),
             'handler' => StreamHandler::class,
-            'formatter' => env('LOG_FORMATTER'),
+            'formatter' => env('LOG_FORMATTER_DOCKER'),
             'with' => [
                 'stream' => 'php://stdout',
+                'level' => env('LOG_LEVEL_DOCKER', 'error'),
             ],
         ]);
 
