@@ -1,5 +1,5 @@
 # laravel-log-docker
-Output log to docker logs.  
+Output laravel log to docker logs only 2 steps.  
 
 ## How to use
 - Install this command.
@@ -15,7 +15,7 @@ composer require kajitori-git/laravel-log-docker
 LOG_CHANNEL=docker
 
 
-#### If need, append this config
+#### Optional : if need, append this config
 
 # Log level. Default is 'error'
 LOG_LEVEL_DOCKER=debug  
